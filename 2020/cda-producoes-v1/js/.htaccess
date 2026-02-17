@@ -1,0 +1,20 @@
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^calhasgarcia.com.br [NC]
+RewriteRule ^(.*)$ https://www.calhasgarcia.com.br [L,R=301]
+
+RewriteCond %{HTTP_HOST} !^\. [NC]
+RewriteRule ^(.+[^/])/$ https://%{HTTP_HOST}%{REQUEST_URI}/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)$ / [R=301,L]
+
+ErrorDocument 404 /index.html
+
+# Use PHP71
+#AddHandler application/x-httpd-php71 .php
