@@ -1,3 +1,10 @@
-.gemini/
+node_modules/
+build/
+dist/
+.next/
+out/
+coverage/
 .DS_Store
-Thumbs.db
+*.log
+.env*
+!.env.example
