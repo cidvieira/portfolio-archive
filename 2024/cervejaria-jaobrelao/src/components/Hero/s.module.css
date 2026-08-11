@@ -1,0 +1,16 @@
+.bgi{
+    background-image: linear-gradient(
+    rgb(0, 0, 0, 0.4),
+    rgb(0, 0, 0, 0.4)
+  ),
+  url('../../../public/cervejaria-jaobrelao-bg.png');
+  background-size: cover;
+  background-position: center ;
+}
+
+h1.ts {
+  text-shadow: 4px 4px black;
+}
+p.ts {
+  text-shadow: 0 5px 3px rgb(0 0 0 / 45%);
+}
