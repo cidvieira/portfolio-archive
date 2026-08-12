@@ -21,7 +21,7 @@ export default function Home() {
         href="https://cidvieira.com/projects"
         aria-label="Website Cid Vieira"
         className="fixed bottom-4 right-4 z-99999">
-        <img src="/icon-cid-vieira.svg" alt="Website Cid Vieira" />
+        <img src="/portfolio-archive/2024/cervejaria-jaobrelao/icon-cid-vieira.svg" alt="Website Cid Vieira" />
       </Link>
     </main>    
   )
